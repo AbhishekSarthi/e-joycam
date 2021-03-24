@@ -1,9 +1,18 @@
 .toolbar {
-  margin: 0 0 1rem 1rem;
+  // margin-left: 15rem;
+  // padding-left: 200px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  // margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  // background-color: #057f9ba1;
+  // border-radius: 40px;
   /* on icons are hidden by default */
 
   .icon {
     position: relative;
+    margin-bottom: 10px;
+    margin-left: 15px;
     font-size: 24px;
     color: #fff;
     width: 48px;
@@ -33,7 +42,7 @@
   }
 
   .tooltip {
-    margin-left: 0.5rem;
+    margin-left: 10px;
     opacity: 0;
     visibility: hidden;
     color: white;
@@ -42,8 +51,8 @@
     transform: translateX(-100%);
     pointer-events: none;
     position: absolute;
-    left: 100%;
-    top: 0;
+    left: 10%;
+    top: -70%;
     bottom: 0;
     white-space: nowrap;
     line-height: 48px;
@@ -60,9 +69,10 @@
 
     &:hover {
       .icon {
-        box-shadow: 2px 2px 24px rgba(white, 0.1);
+        box-shadow: 2px 2px 24px rgba(white, 0.5);
         cursor: pointer;
-        background-color: #407cf7;
+        background-color: #030029;
+        // #407cf7
       }
       .icon.icon-call_end {
         background-color: #dd2c00;
@@ -89,15 +99,15 @@
   }
 }
 
-@-webkit-keyframes bg_blink {
-  50% {
-    background-color: #407cf7;
-  }
+// @-webkit-keyframes bg_blink {
+//   50% {
+//     background-color: #407cf7;
+//   }
 
-  99% {
-    background-color: #407cf7;
-  }
-}
+//   99% {
+//     background-color: #407cf7;
+//   }
+// }
 
 @-moz-keyframes bg-blink {
   50% {

@@ -2,21 +2,24 @@
   margin: 4rem auto 0;
   max-width: 450px;
   text-align: center;
-
+  background-color: #057f9ba1;
+  border-radius: 40px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
 
-  select, input {
+  select,
+  input {
     padding: 15px 10px;
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;       /* Remove default arrow */
+    appearance: none; /* Remove default arrow */
     border: none;
-    border-radius: 4px;
+    border-radius: 40px;
     border-bottom: 2px solid darken(#fff, 10%);
     color: black;
     background-color: white;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
   }
 
   select {
@@ -29,12 +32,19 @@
     }
   }
 
-  select, input, button {
+  select,
+  input,
+  button {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
     font-size: 1.2rem;
   }
 
   button {
-    @include button($color-primary, $color-warning);
+    @include button($color-primary, $color-error);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
     padding: 1rem;
+    border-radius: 40px;
   }
 }
