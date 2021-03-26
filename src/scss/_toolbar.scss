@@ -4,15 +4,17 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   // margin-bottom: 15px;
   display: flex;
+  margin-left: 5px;
   flex-direction: row;
-  // background-color: #057f9ba1;
+  // background-color: black;
   // border-radius: 40px;
   /* on icons are hidden by default */
 
   .icon {
     position: relative;
-    margin-bottom: 10px;
-    margin-left: 15px;
+    // margin-bottom: 10px;
+    // margin-left: 5px;
+
     font-size: 24px;
     color: #fff;
     width: 48px;
@@ -42,7 +44,7 @@
   }
 
   .tooltip {
-    margin-left: 10px;
+    margin-left: 2px;
     opacity: 0;
     visibility: hidden;
     color: white;
@@ -66,12 +68,11 @@
     align-items: center;
     cursor: pointer;
     position: relative;
-
     &:hover {
       .icon {
         box-shadow: 2px 2px 24px rgba(white, 0.5);
         cursor: pointer;
-        background-color: #030029;
+        background-color: #004b7c;
         // #407cf7
       }
       .icon.icon-call_end {
@@ -90,6 +91,91 @@
 
   .button + .button {
     margin-top: 1rem;
+  }
+
+  .chat {
+    background-color: black;
+    border-radius: 20px;
+
+    // box-shadow: 2px 2px 24px rgba(black, 0.3);
+    top: -622px;
+    left: -3px;
+    // margin-top: -600px;
+  }
+  .send-file {
+    background-color: black;
+    // position: relative;
+    border-radius: 20px;
+    box-shadow: 2px 2px 24px rgba(black, 0.3);
+    top: -570px;
+    left: -50px;
+    // margin-bottom: 550px;
+  }
+  .stream-desktop {
+    background-color: black;
+    // position: fixed;
+    border-radius: 20px;
+    box-shadow: 2px 2px 24px rgba(black, 0.3);
+    top: -512px;
+    left: -98px;
+  }
+  .fullscreen {
+    background-color: black;
+    position: fixed;
+    border-radius: 20px;
+    box-shadow: 2px 2px 24px rgba(black, 0.3);
+    // top: -455px;
+    // left: -145px;
+    top: 170px;
+    left: 3px;
+  }
+
+  .mute-audio {
+    position: fixed;
+    background-color: black;
+    padding: 5px;
+    border-radius: 20px;
+    bottom: 20px;
+    left: 43%;
+  }
+  .mute-video {
+    background-color: black;
+    padding: 5px;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 20px;
+
+    left: 48%;
+  }
+
+  .hangup {
+    background-color: black;
+    padding: 5px;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 20px;
+    left: 53%;
+  }
+
+  .fullscreen > .tooltip {
+    left: 100%;
+    top: 0;
+    bottom: 0;
+  }
+  .stream-desktop > .tooltip {
+    left: 100%;
+    top: 0;
+    bottom: 0;
+  }
+  .send-file > .tooltip {
+    left: 100%;
+    top: 0;
+    bottom: 0;
+  }
+  .chat > .tooltip {
+    left: 100%;
+    top: 0;
+    bottom: 0;
   }
 
   .chat.blink .icon {
