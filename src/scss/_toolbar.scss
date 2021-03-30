@@ -137,8 +137,8 @@
     border-radius: 20px;
     bottom: 25px;
     // left: 43%;
-    @media screen and (min-width: 480px) {
-      left: 30%;
+    @media screen and (min-width: 400px) {
+      left: 20%;
     }
     @media screen and (min-width: 900px) {
       left: 43%;
@@ -152,8 +152,8 @@
     bottom: 25px;
 
     // left: 48%;
-    @media screen and (min-width: 480px) {
-      left: 45%;
+    @media screen and (min-width: 400px) {
+      left: 50%;
     }
     @media screen and (min-width: 900px) {
       left: 48%;
@@ -168,8 +168,8 @@
     bottom: 25px;
     // left: 53%;
 
-    @media screen and (min-width: 480px) {
-      left: 60%;
+    @media screen and (min-width: 400px) {
+      left: 80%;
     }
     @media screen and (min-width: 900px) {
       left: 53%;
