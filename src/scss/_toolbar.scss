@@ -136,7 +136,13 @@
     padding: 5px;
     border-radius: 20px;
     bottom: 25px;
-    left: 43%;
+    // left: 43%;
+    @media screen and (min-width: 480px) {
+      left: 30%;
+    }
+    @media screen and (min-width: 900px) {
+      left: 43%;
+    }
   }
   .mute-video {
     background-color: black;
@@ -145,7 +151,13 @@
     position: fixed;
     bottom: 25px;
 
-    left: 48%;
+    // left: 48%;
+    @media screen and (min-width: 480px) {
+      left: 45%;
+    }
+    @media screen and (min-width: 900px) {
+      left: 48%;
+    }
   }
 
   .hangup {
@@ -154,7 +166,14 @@
     border-radius: 20px;
     position: fixed;
     bottom: 25px;
-    left: 53%;
+    // left: 53%;
+
+    @media screen and (min-width: 480px) {
+      left: 60%;
+    }
+    @media screen and (min-width: 900px) {
+      left: 53%;
+    }
   }
 
   .fullscreen > .tooltip {
@@ -182,6 +201,18 @@
     -webkit-animation: bg-blink 1s infinite;
     -moz-animation: bg-blink 1s infinite;
     animation: bg-blink 1s infinite;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hangup {
+    left: 80%;
+  }
+  .mute-video {
+    left: 50%;
+  }
+  .mute-audio {
+    left: 3%;
   }
 }
 

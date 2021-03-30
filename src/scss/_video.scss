@@ -3,7 +3,8 @@ $shadow-size: 2px;
 
 .videos {
   white-space: nowrap;
-  // background-image: linear-gradient(120deg, $color-fg 0%, #00183b 100%);
+  background-color: #00183b;
+  background-image: linear-gradient(120deg, $color-fg 0%, #00183b 100%);
 }
 
 .videos-grid {
