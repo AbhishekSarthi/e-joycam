@@ -7,9 +7,22 @@
 <body>
 
   <div class="header">
-    <img class="opacity-logo" src="<%= baseUrl + '/res/e-joycam.jpeg' %>" width="80x" height="50px" alt="e-joycam">
-    <h4 class="right-side">Plans</h4>
-    <h4 class="right-side1">FAQ</h4>
+    <img class="opacity-logo" src="<%= baseUrl + '/res/e-joycam.jpeg' %>" width="100x" height="70px" alt="e-joycam">
+    <div class="header-text">
+      <div class="header-text1">
+        <h1>E-JOYCAM</h1>
+      </div>
+      <div class="header-text2">
+        <h4>Plans</h4>
+      </div>
+      <div class="header-text3">
+        <h4>FAQ</h4>
+      </div>
+         
+      
+      
+      
+  </div>
   </div>
   
    <div class="image1">
@@ -55,12 +68,50 @@
     </div>
   </div>
 
-  <footer class="test">
-    <div>About Us</div>
-    <div>Contact</div>
-    <div>
-      @CopyRight
+  <footer>
+    <div class="footer-text">
+    <div class="footer-text1">
+      <ul>
+        <li><h1>SVADHYAYA.com</h1></li>
+        <li><h3>'SVADHYAYA' ,as the term it itself means study by your own self</h3></li>
+        <li><h3>'E-SVADHYAYA' ,is an all in one learning platform, which according to its name,enables students to study by their own.
+
+        </h3></li>
+      </ul>
+    </div>
+    <div class="footer-text2">
+      <ul>
+        <li><h2>About</h2></li>
+        <li><h3>About us</h3></li>
+        <li><h3>Privacy policies</h3></li>
+        <li><h3>Terms of Services</h3></li>
+      
+      </ul>
+    </div>
+    <div class="footer-text3">
+      <ul>
+        <li><h2>CONTACT US</h2></li>
+        <li><h3> Address
+          SVADHYAYA India</h3></li>
+          <li><h3> Mail
+            contact@e-svadhyaya.com</h3></li>
+      </ul>
+    </div>
+  </div>
+    <div class="footer-text4">
+      <span>© 2020 Copyright: SVADHYAYA.pvt.ltd</span>
     </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script>
+    gsap.from(".image1", { duration: 2, x: 500, opacity: 0, scale: 0.5 });
+    gsap.from("#container-homepage", { duration: 2, x: -300, opacity: 0, scale: 0.5 })
+    gsap.from(".image2", { duration: 2, x: 500, opacity: 0, scale: 0.5 });
+    gsap.from(".image3", { duration: 2, x: -500, opacity: 0, scale: 0.5 });
+    gsap.from(".image4", { duration: 2, x: 500, opacity: 0, scale: 0.5 });
+    gsap.from(".header-text1", { duration: 2, y: -200, opacity: 0, scale: 0.5 });
+    gsap.from(".header-text2, .header-text3", { duration: 2, x: 500, opacity: 0, scale: 0.5 });
+  </script>
 
 </body>
