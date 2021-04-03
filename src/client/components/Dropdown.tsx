@@ -39,7 +39,7 @@ extends React.PureComponent<DropdownProps, DropdownState> {
 
     return (
       <div className='dropdown'>
-        <button onClick={handleClick} >{this.props.label}</button>
+        <button onClick={handleClick} >{this.props.label}<span>asdfgasdfSD</span></button>
         <ul className={classNames}>
           {menu}
         </ul>

@@ -5,6 +5,8 @@
 *:before,
 *:after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -17,11 +19,11 @@ body {
 }
 
 body {
-  background-image: linear-gradient(120deg, $color-fg 0%, #00183b 100%);
+  background-image: linear-gradient(120deg, #c2daff 0%, #649df3 100%);
   background-color: $color-bg;
   color: $color-fg;
   margin: 0;
-  font-family: $font-sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   min-height: 100%;
   padding-bottom: 3rem;
   position: relative;
@@ -29,7 +31,7 @@ body {
 
 footer {
   position: absolute;
-  padding: 0.6rem 0;
+  padding: 20px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -39,14 +41,13 @@ footer {
 
 .header {
   position: relative;
-  padding: 0.7rem 0;
+  padding: 0;
   display: flex;
-
+  height: 70px;
   top: 0;
   width: 100%;
-
+  background-image: linear-gradient(120deg, #649df3 0%, #c2daff 100%);
   text-align: center;
-  background-color: black;
 }
 
 .left-side {
@@ -58,10 +59,97 @@ footer {
 .right-side1 {
   margin-left: 3%;
 }
-// #container {
-//   position: relative;
-//   height: 550px;
-// }
+
+.image1 {
+  position: relative;
+  padding: 10px;
+  padding-bottom: 20px;
+  @media screen and (min-width: 100px) {
+    // margin-top: 30%;
+    visibility: hidden;
+  }
+  @media screen and (min-width: 720px) {
+    // margin-top: 0;
+    visibility: visible;
+  }
+}
+.image2,
+.image4 {
+  position: relative;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  // right: 0;
+  // margin-left: 50%;
+
+  img {
+    width: 100%;
+  }
+}
+.image3 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 50%;
+  img {
+    width: 100%;
+  }
+}
+
+.webinar-text {
+  position: absolute;
+  width: 45%;
+  margin: 10px;
+  padding: 10px;
+  left: 50%;
+  @media screen and (min-width: 100px) {
+    margin-top: 3%;
+  }
+  @media screen and (min-width: 720px) {
+    margin-top: 8%;
+  }
+}
+.about-text,
+.extra-text {
+  position: absolute;
+  margin: auto;
+  width: 45%;
+  margin: 10px;
+  padding: 10px;
+  @media screen and (min-width: 100px) {
+    margin-top: 5%;
+  }
+  @media screen and (min-width: 720px) {
+    margin-top: 15%;
+  }
+}
+#container-homepage {
+  position: absolute;
+  top: 10%;
+  z-index: 1;
+  height: 350px;
+  left: 5%;
+  @media screen and (min-width: 100px) {
+    left: 15%;
+  }
+  @media screen and (min-width: 720px) {
+    left: 5%;
+  }
+}
+.about,
+.webinar-box,
+.extra {
+  text-align: center;
+  @media screen and (min-width: 100px) {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 720px) {
+    height: 500px;
+    margin-bottom: 40px;
+  }
+  padding: 10px;
+}
 
 body.call {
   background-image: url("../res/e-joycam.jpeg");
@@ -107,18 +195,13 @@ body.call {
   padding-top: 50px;
   text-align: center;
   width: 300px;
-  height: 600px;
+  height: 350px;
   margin: 0 auto;
-
-  h1 {
-    margin: 0;
-    line-height: 0;
-  }
 
   p {
     font-size: larger;
     margin: 50px 0;
-    color: $color-primary;
+    color: black;
   }
 
   input[type="text"] {
@@ -285,119 +368,6 @@ body.call {
   // padding: 40px
 }
 
-// .special {
-//   font-size: larger;
-//   background-color: #2e7691
-//   padding: 10px;
-//   color: black;
-//   margin: 4rem auto 0;
-//   max-width: 450px;
-//   text-align: center;
-
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .side-button-webinar{
-
-// }
-
 a {
   text-decoration: none;
 }
-// .add-webinar {
-//   list-style: none;
-
-//   display: flex;
-//   margin-top: -340px;
-//   margin-left: 1160px;
-//   @include button($color-primary, $color-warning);
-//   color: beige;
-//   padding: 1rem;
-//   font-size: 1.2rem;
-// }
-// .webinar-span {
-//   color: aliceblue;
-//   text-align: center;
-//   margin-left: 5px;
-//   padding: 10px;
-// }
-
-// .webinar-button {
-//   @include button($color-primary, $color-warning);
-//   padding: 1rem;
-//   font-size: 1.2rem;
-// }
-
-// .webinar-input {
-//   padding: 15px 10px;
-//   font-size: 1.2rem;
-//   -webkit-appearance: none;
-//   -moz-appearance: none;
-//   appearance: none; /* Remove default arrow */
-//   border: none;
-//   border-radius: 4px;
-//   border-bottom: 2px solid darken(#fff, 10%);
-//   color: black;
-//   background-color: white;
-//   margin-bottom: 1rem;
-// }
-
-// .span-margin {
-//   margin-bottom: 10px;
-// }
-
-// .webinar-list {
-//   background-color: #2e7691;
-//   margin: auto;
-//   padding: 5px;
-//   margin-top: 7px;
-//   margin-bottom: 7px;
-//   font-size: larger;
-//   text-align: center;
-//   width: 80%;
-// }
-
-// .black-span {
-//   color: black;
-// }
-// .red-span {
-//   color: darkred;
-// }
-
-// .special-card {
-//   background-color: azure;
-//   text-align: center;
-//   width: 300px;
-//   height: 110px;
-//   display: flex;
-//   margin: 10px;
-//   float: left;
-// }
-
-// .special-card > .setImage {
-//   display: flex;
-//   margin-top: 5px;
-//   margin-left: 5px;
-//   height: 100px;
-//   width: 100px;
-// }
-
-// .nextline {
-//   // display: flex;
-//   margin-left: 5px;
-//   text-align: left;
-//   list-style: none;
-//   // justify-content: center;
-//   // margin-top: 40px;
-
-//   // margin-left: 20px;
-// }
-
-// .biggText {
-//   font-size: x-large;
-// }
-
-// .someSpace {
-//   margin-bottom: 200px;
-// }
