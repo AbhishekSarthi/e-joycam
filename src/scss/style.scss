@@ -88,39 +88,50 @@ footer {
   }
 }
 
-.image1 {
-  position: relative;
-  padding: 10px;
-  padding-bottom: 20px;
-  @media screen and (min-width: 100px) {
-    // margin-top: 30%;
-    visibility: hidden;
-  }
-  @media screen and (min-width: 720px) {
-    // margin-top: 0;
-    visibility: visible;
-  }
-}
+// .image1 {
+//   position: relative;
+//   width: 50%;
+//   left: 55%;
+//   margin-top: 20px;
+//   // padding: 10px;
+//   // margin: 10px;
+
+//   @media screen and (min-width: 100px) {
+//     // margin-top: 30%;
+//     visibility: hidden;
+//   }
+//   @media screen and (min-width: 720px) {
+//     // margin-top: 0;
+//     visibility: visible;
+//   }
+// }
 .image2,
+.image5,
 .image4 {
   position: relative;
   top: 0;
   left: 50%;
   width: 50%;
+  // height: 50%;
   // right: 0;
   // margin-left: 50%;
-
+  // @media screen and (min-width: 100px) {
+  //   height: 2%;
+  // }
+  // @media screen and (min-width: 720px) {
+  // }
   img {
-    width: 100%;
+    width: 90%;
   }
 }
-.image3 {
+.image3,
+.image6 {
   position: relative;
   top: 0;
   left: 0;
   width: 50%;
   img {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -137,7 +148,21 @@ footer {
     margin-top: 8%;
   }
 }
+.webinar-text1 {
+  position: absolute;
+  width: 45%;
+  margin: 10px;
+  padding: 10px;
+  left: 50%;
+  @media screen and (min-width: 100px) {
+    margin-top: 0%;
+  }
+  @media screen and (min-width: 720px) {
+    margin-top: 1%;
+  }
+}
 .about-text,
+.about-text1,
 .extra-text {
   position: absolute;
   margin: auto;
@@ -148,33 +173,38 @@ footer {
     margin-top: 5%;
   }
   @media screen and (min-width: 720px) {
-    margin-top: 15%;
+    margin-top: 8%;
   }
 }
 #container-homepage {
-  position: absolute;
-  top: 10%;
+  background-color: #041a3a;
+  border: 1px solid black;
+  border-radius: 100px;
+  position: relative;
+  width: 80%;
+  top: 4%;
   z-index: 1;
-  height: 350px;
-  left: 5%;
-  @media screen and (min-width: 100px) {
-    left: 15%;
-  }
-  @media screen and (min-width: 720px) {
-    left: 5%;
-  }
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: 400px;
+  padding: 60px;
+  text-align: center;
+  left: 10%;
 }
 .about,
+.about1,
 .webinar-box,
+.webinar-box1,
 .extra {
   text-align: center;
+
   @media screen and (min-width: 100px) {
-    height: 250px;
+    height: 450px;
     margin-bottom: 20px;
   }
   @media screen and (min-width: 720px) {
     height: 500px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   padding: 10px;
 }
@@ -222,7 +252,12 @@ body.call {
 #form {
   padding-top: 50px;
   text-align: center;
-  width: 300px;
+  @media screen and (min-width: 100px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 720px) {
+    width: 40%;
+  }
   height: 350px;
   margin: 0 auto;
 
@@ -397,5 +432,7 @@ body.call {
 }
 
 a {
-  text-decoration: none;
+  // text-decoration: none;
+
+  color: $color-fg;
 }
