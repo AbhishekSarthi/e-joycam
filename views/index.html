@@ -29,7 +29,11 @@
     <form id="form" method="post" action="<%= baseUrl + '/call' %>" autocomplete="off">
     
       <h2>Group calls for everyone. Create a private room. Share the link.</h2>
-      <input type="text" value="" name="call" placeholder="Room ID (Leave empty for random)" autofocus>
+      <div class="form-input">
+        <input type="text" value="" name="call" placeholder="Create Room Code" autofocus>
+        <h3> OR </h3>
+        <input type="text" value="" name="call" placeholder="Join via Code" autofocus>
+      </div>
       <input type="submit" value="Start Session">
     </form>
 
@@ -44,7 +48,7 @@
   <h3>Fullscreen window</h3>
 </div>
   <div class="image2">
-    <img src="<%= baseUrl + '/res/ani1.gif' %>" height="450px" width="350px">
+    <img src="<%= baseUrl + '/res/ani7.gif' %>" height="450px" width="350px">
   </div>
 </div>
 
@@ -55,7 +59,7 @@
     <h4>Create or join Webinar of your choice.</h4>
   </div>
 <div class="image3">
-  <img src="<%= baseUrl + '/res/ani2.gif' %>" width="400px" height="400px">
+  <img src="<%= baseUrl + '/res/ani5.gif' %>" width="400px" height="400px">
 </div>
 </div>
 
@@ -65,18 +69,18 @@
     <h3>To be Updated next month...</h3>
   </div>
     <div class="image5">
-      <img src="<%= baseUrl + '/res/anim4.gif' %>"  width="400px" height="400px">
+      <img src="<%= baseUrl + '/res/ani6.gif' %>"  width="400px" height="400px">
     </div>
   </div>
 
   <div class="webinar-box1">
     <div class="webinar-text1">
-      <h1>About <a href="https://www.e-svadhyaya.com/" target="_blank" >E-SVADHYAYA.com</a></h1>
+      <h1><a href="https://www.e-svadhyaya.com/" target="_blank" >E-SVADHYAYA.com</a></h1>
       <br/>
         <h3>'Svadhyaya', as the term in itself means itself , ' Study by your own self'. E-Svadhyaya, is an all in one learning platform, which according to it's name, enables students to study by their self and own their own. Being independent students would be able to make their future strong by learning the topic of their choice from any teacher within the world. At the same time, E-Svadhyaya also offers the teachers and institutes to teach and impart thier knowledge worlwide online. It enable institutes to easily take their education online through many of it's advance features provided. Some other features are also there to become even financially independent and to make personality and future even more stronger i.e. Freelancing, job opportunities , selling recorded course video lectures , organising or taking webinars and many other advanced features also.</h3>
       </div>
     <div class="image6">
-      <img src="<%= baseUrl + '/res/e-joycam.jpeg' %>"  width="200px" height="400px">
+      <img src="<%= baseUrl + '/res/log4.jpg' %>"  width="160px" height="350px">
     </div>
   </div>
 
@@ -91,6 +95,7 @@
   </div>
 
   <footer>
+    
     <div class="footer-text">
     <div class="footer-text1">
       <ul>
@@ -120,10 +125,12 @@
       </ul>
     </div>
   </div>
-    <div class="footer-text4">
-      <span>© 2020 Copyright: SVADHYAYA.pvt.ltd</span>
-    </div>
-  </footer>
+  <br/>
+  
+</footer>
+<div class="footer-text4">
+  <span>© 2020 Copyright: SVADHYAYA.pvt.ltd</span>
+</div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
   <script>
