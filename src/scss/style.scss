@@ -41,6 +41,17 @@ body {
   }
 }
 
+.header-text {
+  h3 {
+    @media screen and (min-width: 100px) {
+      font-size: 0.8rem;
+    }
+    @media screen and (min-width: 720px) {
+      font-size: 1rem;
+    }
+  }
+}
+
 .header-text1 {
   h1 {
     @media screen and (min-width: 100px) {
@@ -151,7 +162,7 @@ footer {
     margin: auto;
     text-align: center;
     .header-text1 {
-      width: 50%;
+      width: 55%;
       text-align: left;
     }
     .header-text2,
