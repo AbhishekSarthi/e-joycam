@@ -27,6 +27,12 @@ body {
   min-height: 100%;
   // padding-bottom: 3rem;
   position: relative;
+  h1,
+  h2,
+  h4,
+  h3 {
+    margin: 5px;
+  }
 }
 
 footer {
@@ -118,21 +124,34 @@ footer {
   .header-text {
     width: 100%;
     display: flex;
+    // float: left;
+
     margin: auto;
     text-align: center;
     .header-text1 {
       width: 50%;
       text-align: left;
     }
-    .header-text2 {
-      width: 20%;
+    .header-text2,
+    .header-text3,
+    .header-text4,
+    .header-text5 {
+      // width: 30%;
+      margin-top: 5px;
+      list-style: none;
+      margin-left: 10px;
+      float: left;
     }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
   }
 }
 
 // .image1 {
-//   position: relative;
-//   width: 50%;
+//   width: 20%;
 //   left: 55%;
 //   margin-top: 20px;
 //   // padding: 10px;
@@ -194,7 +213,7 @@ footer {
   // width: 50%;
   @media screen and (min-width: 100px) {
     width: 100%;
-    top: 450px;
+    top: 480px;
   }
   @media screen and (min-width: 720px) {
     top: 0;
@@ -236,7 +255,7 @@ footer {
     width: 100%;
     left: 0;
     margin-top: 0%;
-    margin-bottom: 200px;
+    margin-bottom: 20px;
   }
   @media screen and (min-width: 720px) {
     left: 50%;
@@ -372,20 +391,19 @@ body.call {
 
 #form {
   padding-top: 30px;
+  width: 60%;
+  // float: left;
   text-align: center;
   @media screen and (min-width: 100px) {
     width: 100%;
   }
   @media screen and (min-width: 720px) {
-    width: 40%;
+    width: 60%;
   }
   height: 350px;
   margin: 0 auto;
 
-  h3 {
-    color: white;
-    margin-top: 24px;
-  }
+  color: white;
 
   p {
     font-size: larger;
