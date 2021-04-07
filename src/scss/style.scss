@@ -150,22 +150,34 @@ footer {
   }
 }
 
-// .image1 {
-//   width: 20%;
-//   left: 55%;
-//   margin-top: 20px;
-//   // padding: 10px;
-//   // margin: 10px;
+.image1 {
+  position: relative;
+  // float: left;
+  // width: 20%;
+  @media screen and (min-width: 100px) {
+    width: 100%;
+    left: 0%;
+    top: 250px;
+  }
+  @media screen and (min-width: 720px) {
+    top: 0;
+    left: 65%;
+    width: 50%;
+  }
+  //   left: 55%;
+  //   margin-top: 20px;
+  //   // padding: 10px;
+  //   // margin: 10px;
 
-//   @media screen and (min-width: 100px) {
-//     // margin-top: 30%;
-//     visibility: hidden;
-//   }
-//   @media screen and (min-width: 720px) {
-//     // margin-top: 0;
-//     visibility: visible;
-//   }
-// }
+  //   @media screen and (min-width: 100px) {
+  //     // margin-top: 30%;
+  //     visibility: hidden;
+  //   }
+  //   @media screen and (min-width: 720px) {
+  //     // margin-top: 0;
+  //     visibility: visible;
+  //   }
+}
 .image2,
 .image5,
 .image4 {
@@ -294,10 +306,15 @@ footer {
   z-index: 1;
   margin-top: 2%;
   margin-bottom: 2%;
-  height: 400px;
   padding: 60px;
   text-align: center;
   left: 10%;
+  @media screen and (min-width: 100px) {
+    height: 600px;
+  }
+  @media screen and (min-width: 720px) {
+    height: 400px;
+  }
 }
 .about,
 .about1,
@@ -322,7 +339,7 @@ footer {
   width: 100%;
   @media screen and (min-width: 100px) {
     height: 450px;
-    margin-top: 20px;
+    margin-top: 200px;
     margin-bottom: 20px;
   }
   @media screen and (min-width: 720px) {
@@ -391,17 +408,21 @@ body.call {
 
 #form {
   padding-top: 30px;
-  width: 60%;
+  // width: 40%;
+  // padding-bottom: 100px;
+  position: absolute;
   // float: left;
   text-align: center;
   @media screen and (min-width: 100px) {
+    left: 0;
     width: 100%;
   }
   @media screen and (min-width: 720px) {
     width: 60%;
+    left: 5%;
   }
   height: 350px;
-  margin: 0 auto;
+  // margin: 0 auto;
 
   color: white;
 
